@@ -1,10 +1,11 @@
 import UserFinder from "./components/UserFinder"
+import UsersContext from "./context/users-context"
 
 function App() {
 	return (
-		<div>
+		<UsersContext.Provider>
 			<UserFinder />
-		</div>
+		</UsersContext.Provider>
 	)
 }
 
